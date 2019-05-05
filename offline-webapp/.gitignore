@@ -68,6 +68,9 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# IntelliJ/Webstorm project directory
+.idea
+
 # Nuxt generate
 dist
 
