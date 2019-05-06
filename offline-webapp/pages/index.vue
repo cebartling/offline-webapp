@@ -1,35 +1,21 @@
 <template>
   <section class="container">
     <div>
-      <logo />
       <h1 class="title">
-        offline-webapp
+        Offline Worksheets demo
       </h1>
-      <h2 class="subtitle">
-        Demonstration of offline data changes and synchronization
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
+    </div>
+    <div>
+      <worksheet-listing></worksheet-listing>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import WorksheetListing from '~/components/WorksheetListing'
 
 export default {
-  components: {
-    Logo
-  }
+  components: { WorksheetListing }
 }
 </script>
 
@@ -38,17 +24,18 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
+  font-weight: 400;
+  font-size: 40px;
   color: #35495e;
   letter-spacing: 1px;
 }

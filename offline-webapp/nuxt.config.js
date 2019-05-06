@@ -3,6 +3,11 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
 
+  serverMiddleware: [
+    '~/serverMiddleware/ping',
+    '~/serverMiddleware/worksheets'
+  ],
+
   /*
    ** Headers of the page
    */
